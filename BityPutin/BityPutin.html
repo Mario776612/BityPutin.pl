@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BityPutin </title>
+<link rel="stylesheet" href="bityPutin.css"> 
+</head>
+<body>
+<div class="header">
+  <h1>Bij Putina </h1>
+</div>
+<h1> Score: <span id="score">0</span></h1>
+<img src="Klaun.jpg"  onclick="addScore(1)"/> 
+<script>
+var score = 0;
+
+function addScore(amount) {
+ score = score + amount;
+document.getElementById("score").innerHTML = score;
+}
+</script>
+
+
+</body>
+</html>
