@@ -6,16 +6,19 @@
 </head>
 <body>
 <div class="header">
-  <h1>Bij Putina </h1>
+  <h1>Bij Putina</h1>
 </div>
 <h1> Score: <span id="score">0</span></h1>
-<img src="Klaun.jpg"  onclick="addScore(1)"/> 
+<img src="Klaun.jpg" class="putin-img"/> 
 <script>
-var score = 0;
+const scoreContainer = document.getElementById("score")
+let score = 0;
+  
+document.querySelector(".putin-img").addEventListener('click',()=>addScore(1))
 
 function addScore(amount) {
- score = score + amount;
-document.getElementById("score").innerHTML = score;
+  score += amount;
+  scoreContainer.innerHTML = score;
 }
 </script>
 
